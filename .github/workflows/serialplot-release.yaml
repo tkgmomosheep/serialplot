@@ -1,9 +1,7 @@
 name: Serialplot build and release action
 run-name: Building ${{ github.event.repository.name }} ${{ github.ref_name }}
 on:
-  push:
-    tags:
-      - "v*"
+  workflow_dispatch:
 
 permissions:
   contents: write
